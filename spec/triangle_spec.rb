@@ -3,10 +3,10 @@ require('triangle')
 
 describe(Triangle) do
   describe('#triangle?') do
-    # it('returns not an equilateral') do
-    #   test_triangle = Triangle.new(30,35,20)
-    #   expect(test_triangle.triangle?()).to(eq("NOT an equilateral"))
-    # end
+    it('returns not an triangle') do
+      test_triangle = Triangle.new(20,5,30)
+      expect(test_triangle.triangle?()).to(eq("NOT a triangle"))
+    end
     it('returns true if it is an equilateral') do
       test_triangle = Triangle.new(30,30,30)
       expect(test_triangle.triangle?()).to(eq("is an equilateral"))
