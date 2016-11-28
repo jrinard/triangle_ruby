@@ -1,5 +1,5 @@
 <h1>Triangle</h1>
- <h2>Please input three numbers to determine the type of triangle you have!(or don't have!)</h2>
+ <h4>Please input three numbers to determine the type of triangle you have!(or don't have!)</h4>
 
  <form action="/result">
    <div class="form-group">
@@ -12,3 +12,11 @@
    </div>
    <button type="submit" class="btn btn-success">Go</button>
  </form>
+
+ <div id="output">
+   <h3>Triangle type:</h3>
+   <h5>Side1: <%= @side1%></h5>
+   <h5>Side2: <%= @side2%></h5>
+   <h5>Side3: <%= @side3%></h5>
+   <%= @triangle %>
+ </div>

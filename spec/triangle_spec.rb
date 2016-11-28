@@ -9,15 +9,15 @@ describe(Triangle) do
     end
     it('returns true if it is an equilateral') do
       test_triangle = Triangle.new(30,30,30)
-      expect(test_triangle.triangle()).to(eq("is an equilateral"))
+      expect(test_triangle.triangle()).to(eq("equilateral"))
     end
     it('returns true if is an isosceles') do
       test_triangle = Triangle.new(30,30,10)
-      expect(test_triangle.triangle()).to(eq("is an isosceles"))
+      expect(test_triangle.triangle()).to(eq("isosceles"))
     end
     it('returns true if is an scalene') do
       test_triangle = Triangle.new(15,30,10)
-      expect(test_triangle.triangle()).to(eq("is an scalene"))
+      expect(test_triangle.triangle()).to(eq("scalene"))
     end
   end
 end

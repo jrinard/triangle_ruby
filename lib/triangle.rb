@@ -11,15 +11,15 @@ class Triangle
       # (@side1 + @side3 <= @side2)
       triangle = "NOT a triangle"
     elsif @side1.eql?(@side2) and @side2.eql?(@side3)
-      triangle = "is an equilateral"
+      triangle = "equilateral"
     elsif (@side1.eql?(@side2) and @side2 != @side3) or
           (@side1.eql?(@side3) and @side2 != @side3) or
           (@side2.eql?(@side3) and @side2 != @side1)
-      triangle = "is an isosceles"
+      triangle = "isosceles"
     elsif (@side1 != @side2 and @side1 != @side3) or
           (@side2 != @side1 and @side2 != @side3) or
           (@side3 != @side1 and @side3 != @side2)
-      triangle = "is an scalene"
+      triangle = "scalene"
     end
    triangle.to_s()
   end
