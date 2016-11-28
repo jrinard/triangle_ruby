@@ -1,18 +1,14 @@
 <h1>Triangle</h1>
  <h2>Please input three numbers to determine the type of triangle you have!(or don't have!)</h2>
 
- <form action="result">
+ <form action="/result">
    <div class="form-group">
-      <label>First number</label>
-      <input name="side1" class="form-control"></input>
-      <label>Second number</label>
-      <input name="side2" class="form-control"></input>
-      <label>Third number</label>
-      <input name="side3" class="form-control"></input>
+      <label for="side1">First number</label>
+      <input id="side1" name="side1" class="form-control" type="text"></input>
+      <label for="side2">Second number</label>
+      <input  id="side2" name="side2" class="form-control" type="text"></input>
+      <label for="side3">Third number</label>
+      <input  id="side3" name="side3" class="form-control" type="text"></input>
    </div>
    <button type="submit" class="btn btn-success">Go</button>
  </form>
- <div id="output">
-   <h3>Triangle type:</h3>
-
- </div>
